@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="icon" href="pokebola.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="clases.js"></script>
+</head>
+<style>
+    #loser {
+        color: red;
+    }
+</style>
+
+<body onload="Show()">
+    <h1 class="text-center">POKÉMON</h1>
+    <div class="text-center" id="vs"></div>
+    <div class="text-center" id="seleccion">
+        <h2>Selecciona tus pokemon</h2>
+
+        <p>Primer pokemon:</p>
+        <select name="" id="pokemon1">
+
+        </select>
+
+        <p>Segundo pokemon:</p>
+        <select name="" id="pokemon2">
+
+        </select>
+
+        <p>Tercer pokemon:</p>
+        <select name="" id="pokemon3">
+
+        </select>
+
+        <br>
+        <br>
+
+        <button onclick="Listo()">Listo</button>
+        <audio id="intro" autoplay>
+            <source src="intro.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div id="poke1"></div>
+                <div id="poke2"></div>
+                <div id="poke3"></div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div id="ene1"></div>
+                <div id="ene2"></div>
+                <div id="ene3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div id="pelea"></div>
+            <br>
+            <br>
+            <div id="ganador"></div>
+            <div id="final"></div>
+            <div id="reinicio"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
